@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Login123
 {
-    public partial class princial : Form
+    public partial class principal : Form
     {
-        public princial()
+        public principal()
         {
             InitializeComponent();
-        }
-
-        private void princiál_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

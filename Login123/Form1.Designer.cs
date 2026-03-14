@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ingreseusuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ingresecontrasena = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.iniciar_seccion = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label4 = new System.Windows.Forms.Label();
             this.regristrate = new System.Windows.Forms.Label();
-            this.mostrarcontrasena = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.mostrar_contrasena = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ingrese_contrasena = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ingrese_usuario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,20 +57,6 @@
             this.label1.Text = "Login";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::Login123.Properties.Resources.Adobe_Express___file_removebg_preview;
-            this.guna2PictureBox2.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(40, 12);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(239, 154);
-            this.guna2PictureBox2.TabIndex = 2;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -80,29 +67,6 @@
             this.label2.Size = new System.Drawing.Size(84, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuario";
-            // 
-            // ingreseusuario
-            // 
-            this.ingreseusuario.BorderThickness = 0;
-            this.ingreseusuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ingreseusuario.DefaultText = "";
-            this.ingreseusuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.ingreseusuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.ingreseusuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ingreseusuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ingreseusuario.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.ingreseusuario.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.ingreseusuario.ForeColor = System.Drawing.Color.Black;
-            this.ingreseusuario.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.ingreseusuario.IconLeft = global::Login123.Properties.Resources.cuenta;
-            this.ingreseusuario.Location = new System.Drawing.Point(13, 328);
-            this.ingreseusuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ingreseusuario.Name = "ingreseusuario";
-            this.ingreseusuario.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.ingreseusuario.PlaceholderText = "Ingrese Su Usuario";
-            this.ingreseusuario.SelectedText = "";
-            this.ingreseusuario.Size = new System.Drawing.Size(305, 55);
-            this.ingreseusuario.TabIndex = 4;
             // 
             // guna2Panel1
             // 
@@ -120,31 +84,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(302, 1);
             this.guna2Panel2.TabIndex = 8;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
-            // 
-            // ingresecontrasena
-            // 
-            this.ingresecontrasena.BorderThickness = 0;
-            this.ingresecontrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ingresecontrasena.DefaultText = "";
-            this.ingresecontrasena.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.ingresecontrasena.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.ingresecontrasena.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ingresecontrasena.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.ingresecontrasena.FocusedState.BorderColor = System.Drawing.Color.Transparent;
-            this.ingresecontrasena.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.ingresecontrasena.ForeColor = System.Drawing.Color.Black;
-            this.ingresecontrasena.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.ingresecontrasena.IconLeft = global::Login123.Properties.Resources.acceso;
-            this.ingresecontrasena.Location = new System.Drawing.Point(17, 412);
-            this.ingresecontrasena.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ingresecontrasena.Name = "ingresecontrasena";
-            this.ingresecontrasena.PasswordChar = '*';
-            this.ingresecontrasena.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.ingresecontrasena.PlaceholderText = "Ingrese Su Contraseña";
-            this.ingresecontrasena.SelectedText = "";
-            this.ingresecontrasena.Size = new System.Drawing.Size(305, 55);
-            this.ingresecontrasena.TabIndex = 7;
-            this.ingresecontrasena.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // label3
             // 
@@ -197,25 +136,97 @@
             this.regristrate.Size = new System.Drawing.Size(70, 17);
             this.regristrate.TabIndex = 11;
             this.regristrate.Text = "Registrate";
+            this.regristrate.Click += new System.EventHandler(this.regristrate_Click);
             // 
-            // mostrarcontrasena
+            // mostrar_contrasena
             // 
-            this.mostrarcontrasena.AutoSize = true;
-            this.mostrarcontrasena.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mostrarcontrasena.CheckedState.BorderRadius = 0;
-            this.mostrarcontrasena.CheckedState.BorderThickness = 0;
-            this.mostrarcontrasena.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mostrarcontrasena.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.mostrarcontrasena.Location = new System.Drawing.Point(159, 464);
-            this.mostrarcontrasena.Name = "mostrarcontrasena";
-            this.mostrarcontrasena.Size = new System.Drawing.Size(164, 24);
-            this.mostrarcontrasena.TabIndex = 12;
-            this.mostrarcontrasena.Text = "Mostar Contraseña";
-            this.mostrarcontrasena.UncheckedState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.mostrarcontrasena.UncheckedState.BorderRadius = 0;
-            this.mostrarcontrasena.UncheckedState.BorderThickness = 0;
-            this.mostrarcontrasena.UncheckedState.FillColor = System.Drawing.Color.Gainsboro;
-            this.mostrarcontrasena.CheckedChanged += new System.EventHandler(this.mostrar_contrasena_CheckedChanged);
+            this.mostrar_contrasena.AutoSize = true;
+            this.mostrar_contrasena.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mostrar_contrasena.CheckedState.BorderRadius = 0;
+            this.mostrar_contrasena.CheckedState.BorderThickness = 0;
+            this.mostrar_contrasena.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mostrar_contrasena.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.mostrar_contrasena.Location = new System.Drawing.Point(159, 464);
+            this.mostrar_contrasena.Name = "mostrar_contrasena";
+            this.mostrar_contrasena.Size = new System.Drawing.Size(164, 24);
+            this.mostrar_contrasena.TabIndex = 12;
+            this.mostrar_contrasena.Text = "Mostar Contraseña";
+            this.mostrar_contrasena.UncheckedState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.mostrar_contrasena.UncheckedState.BorderRadius = 0;
+            this.mostrar_contrasena.UncheckedState.BorderThickness = 0;
+            this.mostrar_contrasena.UncheckedState.FillColor = System.Drawing.Color.Gainsboro;
+            this.mostrar_contrasena.CheckedChanged += new System.EventHandler(this.mostrar_contrasena_CheckedChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(222, 289);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "label5";
+            // 
+            // ingrese_contrasena
+            // 
+            this.ingrese_contrasena.BorderThickness = 0;
+            this.ingrese_contrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ingrese_contrasena.DefaultText = "";
+            this.ingrese_contrasena.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ingrese_contrasena.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ingrese_contrasena.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ingrese_contrasena.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ingrese_contrasena.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.ingrese_contrasena.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.ingrese_contrasena.ForeColor = System.Drawing.Color.Black;
+            this.ingrese_contrasena.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.ingrese_contrasena.IconLeft = global::Login123.Properties.Resources.acceso;
+            this.ingrese_contrasena.Location = new System.Drawing.Point(17, 412);
+            this.ingrese_contrasena.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ingrese_contrasena.Name = "ingrese_contrasena";
+            this.ingrese_contrasena.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.ingrese_contrasena.PlaceholderText = "Ingrese Su Contraseña";
+            this.ingrese_contrasena.SelectedText = "";
+            this.ingrese_contrasena.Size = new System.Drawing.Size(305, 55);
+            this.ingrese_contrasena.TabIndex = 7;
+            this.ingrese_contrasena.UseSystemPasswordChar = true;
+            this.ingrese_contrasena.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            // 
+            // ingrese_usuario
+            // 
+            this.ingrese_usuario.BorderThickness = 0;
+            this.ingrese_usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ingrese_usuario.DefaultText = "";
+            this.ingrese_usuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ingrese_usuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ingrese_usuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ingrese_usuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ingrese_usuario.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.ingrese_usuario.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.ingrese_usuario.ForeColor = System.Drawing.Color.Black;
+            this.ingrese_usuario.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.ingrese_usuario.IconLeft = global::Login123.Properties.Resources.cuenta;
+            this.ingrese_usuario.Location = new System.Drawing.Point(13, 328);
+            this.ingrese_usuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ingrese_usuario.Name = "ingrese_usuario";
+            this.ingrese_usuario.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.ingrese_usuario.PlaceholderText = "Ingrese Su Usuario";
+            this.ingrese_usuario.SelectedText = "";
+            this.ingrese_usuario.Size = new System.Drawing.Size(305, 55);
+            this.ingrese_usuario.TabIndex = 4;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::Login123.Properties.Resources.Adobe_Express___file_removebg_preview;
+            this.guna2PictureBox2.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Horizontal;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(40, 12);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(239, 154);
+            this.guna2PictureBox2.TabIndex = 2;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // Form1
             // 
@@ -223,15 +234,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(331, 608);
-            this.Controls.Add(this.mostrarcontrasena);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.mostrar_contrasena);
             this.Controls.Add(this.regristrate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.iniciar_seccion);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.ingresecontrasena);
+            this.Controls.Add(this.ingrese_contrasena);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.ingreseusuario);
+            this.Controls.Add(this.ingrese_usuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.label1);
@@ -250,15 +262,16 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox ingreseusuario;
+        private Guna.UI2.WinForms.Guna2TextBox ingrese_usuario;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox ingresecontrasena;
+        private Guna.UI2.WinForms.Guna2TextBox ingrese_contrasena;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2GradientButton iniciar_seccion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label regristrate;
-        private Guna.UI2.WinForms.Guna2CheckBox mostrarcontrasena;
+        private Guna.UI2.WinForms.Guna2CheckBox mostrar_contrasena;
+        private System.Windows.Forms.Label label5;
     }
 }
 
