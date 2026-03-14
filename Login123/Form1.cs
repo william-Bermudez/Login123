@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
 using System.Media;
+using AxWMPLib;
 
 namespace Login123
 {
@@ -92,7 +93,9 @@ namespace Login123
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            para_entender entender = new para_entender();
+            entender.Show();
+            this.Hide();
         }
     }
 }

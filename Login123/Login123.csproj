@@ -60,6 +60,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="para entender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="para entender.Designer.cs">
+      <DependentUpon>para entender.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="para entender.resx">
+      <DependentUpon>para entender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.cs</DependentUpon>
@@ -114,6 +123,14 @@
     <None Include="Resources\Adobe_Express_-_file-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="MediaPlayer">
       <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
       <VersionMajor>1</VersionMajor>
