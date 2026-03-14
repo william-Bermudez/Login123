@@ -38,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.regristrate = new System.Windows.Forms.Label();
             this.mostrar_contrasena = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.ingrese_contrasena = new Guna.UI2.WinForms.Guna2TextBox();
             this.ingrese_usuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -67,6 +66,7 @@
             this.label2.Size = new System.Drawing.Size(84, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuario";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // guna2Panel1
             // 
@@ -131,7 +131,7 @@
             this.regristrate.AutoSize = true;
             this.regristrate.Font = new System.Drawing.Font("Segoe UI", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regristrate.ForeColor = System.Drawing.Color.Blue;
-            this.regristrate.Location = new System.Drawing.Point(188, 571);
+            this.regristrate.Location = new System.Drawing.Point(209, 571);
             this.regristrate.Name = "regristrate";
             this.regristrate.Size = new System.Drawing.Size(70, 17);
             this.regristrate.TabIndex = 11;
@@ -156,15 +156,6 @@
             this.mostrar_contrasena.UncheckedState.BorderThickness = 0;
             this.mostrar_contrasena.UncheckedState.FillColor = System.Drawing.Color.Gainsboro;
             this.mostrar_contrasena.CheckedChanged += new System.EventHandler(this.mostrar_contrasena_CheckedChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(222, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "label5";
             // 
             // ingrese_contrasena
             // 
@@ -233,8 +224,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(331, 608);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(335, 608);
             this.Controls.Add(this.mostrar_contrasena);
             this.Controls.Add(this.regristrate);
             this.Controls.Add(this.label4);
@@ -271,7 +261,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label regristrate;
         private Guna.UI2.WinForms.Guna2CheckBox mostrar_contrasena;
-        private System.Windows.Forms.Label label5;
     }
 }
 

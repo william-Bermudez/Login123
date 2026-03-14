@@ -33,12 +33,13 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(400, 121);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(239, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(334, 119);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Cerrar";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // principal
             // 
@@ -49,7 +50,6 @@
             this.Name = "principal";
             this.Text = "principal";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

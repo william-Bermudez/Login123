@@ -77,9 +77,9 @@ namespace Login123
             princial.Show();
             this.Hide();
             WindowsMediaPlayer noche = new WindowsMediaPlayer();
-            noche.URL = @"C:\Users\lenny\Desktop\w\caballo-mona-china.mp3";
+            noche.URL = @"C:\Users\lenny\Desktop\w\windows-xp-startup_1ph012N.mp3";
             noche.controls.play();
-            await Task.Delay(3000);
+            await Task.Delay(3500);
             noche.controls.stop();
 
         }
@@ -88,6 +88,11 @@ namespace Login123
         {
             bocci.URL = @"C:\Users\lenny\Desktop\w\COQUETA  BOCCHI THE ROCK  Grupo Frontera & Fuerza Regida  Cover completo.mp3";
             bocci.controls.play();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
